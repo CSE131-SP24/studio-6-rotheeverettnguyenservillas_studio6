@@ -32,7 +32,11 @@ public class RecursiveMethods {
 	public static int gcd(int p, int q) {
 		
 			// FIXME compute the gcd of p and q using recursion
-			return 0;
+			if(p%q==0) {
+				return q;
+			}
+			
+			return gcd(q, p%q);
 		
 	}
 
@@ -64,6 +68,7 @@ public class RecursiveMethods {
 			double radiusMinimumDrawingThreshold) {
 		
 		// FIXME
+		
 	}
 
 }
